@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.controls {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+
+.controls label,
+.controls select,
+.controls button {
+  font-size: 16px;
+  margin: 5px;
+}
+
+button {
+  padding: 8px 16px;
+  font-weight: bold;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#array {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin: auto;
+  width: 95%;
+  max-width: 1200px;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.bar {
+  margin: 0 1px;
+  background-color: #007bff;
+  width: 5px;
+  transition: height 0.2s ease, background-color 0.2s ease;
+}
+
+.bar.comparing {
+  background-color: orange;
+}
+
+.bar.swapping {
+  background-color: red;
+}
+
+.bar.sorted {
+  background-color: green;
+}
+
+.info-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.box {
+  background-color: white;
+  padding: 15px 20px;
+  width: 300px;
+  max-width: 90%;
+  border-left: 5px solid #333;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.box.right {
+  border-left-color: green;
+}
+
+.box.wrong {
+  border-left-color: red;
+}
+
+.box.time {
+  border-left-color: #007bff;
+}
+
+.box ul {
+  padding-left: 20px;
+  margin: 10px 0 0 0;
+}
+
+.box li {
+  margin-bottom: 6px;
+}
